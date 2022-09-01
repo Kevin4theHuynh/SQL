@@ -1,0 +1,11 @@
+CREATE TABLE store (id integer PRIMARY key, item TEXT, sale_value INTEGER);
+
+//Create a store with a selection of meats
+INSERT INTO store VALUES (1, "Beef", 25);
+INSERT INTO store VALUES (2, "Horse", 5);
+INSERT INTO store VALUES (3, "Chicken", 45);
+INSERT INTO store VALUES (4, "Pork", 15);
+INSERT INTO store VALUES (5, "Lamb", 10);
+
+//Organized by price
+SELECT * FROM store ORDER BY sale_value
